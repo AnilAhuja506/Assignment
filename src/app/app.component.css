@@ -1,0 +1,141 @@
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+
+  transition: 0.7s;
+}
+
+.side-nav a {
+  display: block;
+  padding: 20px 30px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.side-nav a:hover,
+.side-nav button:hover {
+  color: #fff;
+  transition: 0.4s;
+}
+
+.side-nav .close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  margin-left: 50px;
+  font-size: 30px
+}
+
+.slide a {
+  color: #000;
+  font-size: 36px;
+}
+
+#content {
+  padding: 20px;
+  transition: margin-left 0.7s;
+  overflow: hidden;
+  width: 100%;
+}
+
+.rght-img {
+  text-align: right;
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.side-nav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+
+.active {
+  background: #fff;
+  color: #818181;
+}
+
+.dash-icon {
+  margin-right: 10px;
+
+}
+
+.navbar-header {
+  position: absolute;
+  padding: 5px;
+}
+
+.rght-img .dash-icon {
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.logo {
+  width: 150px;
+}
+
+.dropdown-menu {
+  float: right;
+  right: 2%;
+  left: unset;
+}
+
+.name {
+  border-bottom: 1px solid grey;
+}
+
+.profile {
+  padding-top: 10px !important;
+}
+
+.profile .fa {
+  padding-right: 3px !important;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 445px) {
+  .rght-img {
+    display: none;
+  }
+}
